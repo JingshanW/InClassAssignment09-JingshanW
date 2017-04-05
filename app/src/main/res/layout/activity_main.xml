@@ -10,8 +10,37 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.example.android.inclassassignment09_jingshanw.MainActivity">
 
-    <TextView
+    <Button
+        android:id="@+id/addSomething_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!" />
+        android:text="Add Something"
+        android:onClick="addSomething"
+        android:layout_alignParentBottom="true"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Log Out"
+        android:onClick="signOut"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"/>
+
+    <TextView
+        android:id="@+id/display_text_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Add Something"
+        android:id="@+id/addSomething_edit_text"
+        android:layout_above="@+id/addSomething_button"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
 </RelativeLayout>
